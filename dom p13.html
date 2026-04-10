@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>Change Multiple Paragraphs</title>
+</head>
+
+<body>
+
+<!-- Paragraphs with same class -->
+<p class="text">Paragraph 1</p>
+<p class="text">Paragraph 2</p>
+
+<!-- Button to change text -->
+<button onclick="change()">Change</button>
+
+<script>
+function change() {
+
+    // Select all elements with class "text"
+    let x = document.getElementsByClassName("text");
+
+    // Loop through all elements
+    for (let i = 0; i < x.length; i++) {
+
+        // Update text of each paragraph
+        x[i].innerHTML = "Updated Text";
+    }
+}
+</script>
+
+</body>
+</html>
+</body>
+</html>
